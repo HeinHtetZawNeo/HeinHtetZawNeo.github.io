@@ -1,11 +1,24 @@
 body {
     background-color: #5B5546;
     color: #FFFFFF;
+    text-align: left;
 }
 
 #Name {
     font-size: 4em;
     margin-bottom: 30px;
+}
+
+.flip:hover {
+    transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+}
+
+.CapFirst::first-letter {
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 .hightLight {
@@ -20,22 +33,41 @@ body {
     margin-bottom: 10px;
 
 }
+
 .body {
     color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
 }
-.quote{
+
+.quote {
     font-style: italic;
     font-weight: 10;
     font-size: small;
 }
-a{
+
+a {
     color: red;
+    text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: green;
 }
-img{
+
+img {
     width: 300px;
     height: 300px;
+}
+
+.movieDesTitle {
+    font-size: small;
+}
+
+.movieDesBody {
+    padding-left: 30px;
+    font-size: small;
+}
+ol {
+    display: flex;
+    flex-direction: column-reverse;
 }
