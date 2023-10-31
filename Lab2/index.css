@@ -1,0 +1,40 @@
+body {
+    background-color: #5B5546;
+    color: #FFFFFF;
+}
+
+#Name {
+    font-size: 4em;
+    margin-bottom: 30px;
+}
+
+.hightLight {
+    color: #D6D17B;
+}
+
+.title {
+    color: #9EC1FC;
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 10px;
+
+}
+.body {
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quote{
+    font-style: italic;
+    font-weight: 10;
+    font-size: small;
+}
+a{
+    color: red;
+}
+a:hover{
+    color: green;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
