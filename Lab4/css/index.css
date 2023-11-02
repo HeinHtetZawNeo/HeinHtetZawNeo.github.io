@@ -1,0 +1,144 @@
+body {
+    border: 1px solid #97CCBC;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+[class*="col-"] {
+    margin: 1%;
+}
+
+.col-10 {
+    width: 10%;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+.ncol-10 {
+    margin-left: 11%;
+}
+
+.ncol-50 {
+    margin-left: 51%;
+}
+
+.ncol-40 {
+    margin-left: 40%;
+}
+
+.header {
+    background-color: #97CCBC;
+    font-weight: bold;
+    line-height: 75px;
+}
+
+.logo {
+    font-size: large;
+}
+
+.register {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding-left: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.warning {
+    color: red;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 97%;
+}
+
+.labelTitle {
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+
+.leftSide {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.rightSide {
+    width: 48%;
+    float: right;
+    margin-left: 4%;
+}
+
+.mainbody {
+    display: flex;
+}
+
+.submitBtn,.resetBtn{
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+    background-color: #97CCBC;
+    width: 100%;
+    height: 24px;
+    font-weight: bold;
+    color:white;
+}
+
+.footer{
+    margin-top: 20px;
+    background-color: #E3E3E2;
+}
