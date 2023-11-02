@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Rabbit Wishing', sans-serif;
+    font-size: x-large;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.ncol-2 {
+    margin-left: 16.66%;
+}
+
+.ncol-5 {
+    margin-left: 41.66%;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row {
+    margin: 10px;
+}
+
+.name {
+    text-align: center;
+    height: 100px;
+    padding-top: 45px;
+    font-size: 35px;
+}
+
+#name {
+    animation: blinker 1s linear infinite;
+}
+
+.logo {
+    height: 100%;
+    padding:10px;
+}
+
+.logout {
+    margin-top: 25px;
+    height: 50px;
+}
+
+.header {
+    border-bottom: 1px solid black;
+    height: 100px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+thead {
+    background-color: gray;
+
+}
+
+#totalAmount {
+    text-align: right;
+    padding-right: 120px;
+}
+
+.itemTitle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.shoppingCart {
+    width: 20px;
+    margin: auto;
+    display: block;
+}
+
+.quantity {
+    width: 49%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+
+}
+.qtyButton{
+    width: 12%;
+}
+#placeOrder {
+    padding: 10px;
+    height: 20px;
+}

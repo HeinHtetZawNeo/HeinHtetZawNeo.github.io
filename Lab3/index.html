@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/rabbit-wishing" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row header">
+        <img class="col-1 logo" src="./rsc/logo.gif" alt="Logo">
+        <div class="col-10 name">
+            Welcome, <span id="name" class="name">Hein Htet Zaw</span>
+        </div>
+        <div class="col-1">
+            <input type="button" class="logout" value="Logout">
+        </div>
+    </div>
+    <div class="col-8 itemTitle ncol-2">
+        Product List
+    </div>
+    <table class="col-8 item ncol-2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Node.js</td>
+                <td>9.99</td>
+                <td>8</td>
+                <td><a href="#"><img class="shoppingCart" src="rsc/cart-shopping-solid.svg" alt="shoppingCart"></a></td>
+            </tr>
+            <tr>
+                <td>React</td>
+                <td>19.99</td>
+                <td>5</td>
+                <td><a href="#"><img class="shoppingCart" src="rsc/cart-shopping-solid.svg" alt="shoppingCart"></a></td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>29.99</td>
+                <td>13</td>
+                <td><a href="#"><img class="shoppingCart" src="rsc/cart-shopping-solid.svg" alt="shoppingCart"></a></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="col-8 itemTitle ncol-2">
+        Your Shopping Cart
+    </div>
+
+    <table class="col-8 item ncol-2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th style="width: 25%;">Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Node.js</td>
+                <td>9.99</td>
+                <td>9.99</td>
+                <td><button class="qtyButton">-</button><input class="quantity" type="number" value="1"><button class="qtyButton">+</button></td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>29.99</td>
+                <td>299.90</td>
+                <td><button class="qtyButton">-</button><input class="quantity" type="number" value="10"><button class="qtyButton">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="4" id="totalAmount">Total : 300.98</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="col-2 ncol-5" id="placeOrder">
+    <button>Place Order</button>
+</div>
+</body>
+
+</html>
