@@ -126,7 +126,8 @@ textarea {
     display: flex;
 }
 
-.submitBtn,.resetBtn{
+.submitBtn,
+.resetBtn {
     border: 0;
     background: none;
     box-shadow: none;
@@ -135,10 +136,15 @@ textarea {
     width: 100%;
     height: 24px;
     font-weight: bold;
-    color:white;
+    color: white;
 }
 
-.footer{
+.submitBtn:hover,
+.resetBtn:hover {
+    color: black;
+}
+
+.footer {
     margin-top: 20px;
     background-color: #E3E3E2;
 }
