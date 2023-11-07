@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/index.css" rel="stylesheet">
+    <script src="./ProblemC.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="row">
+            Counter 
+        </div>
+        <div class="row">
+            <span class="" id="Number"></span>
+        </div>
+        <div class="row">
+            <input type="number" id="from">
+        </div>
+        <div class="row">
+            <input type="number" id="to">
+        </div>
+        <div class="row">
+            <button id="start">Start</button>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("start").onclick = (env)=>{
+            printNumbers(document.getElementById("from").value, document.getElementById("to").value);
+        };
+    </script>
+</body>
+</html>

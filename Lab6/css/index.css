@@ -1,0 +1,40 @@
+body {
+    background-color: gray;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    width: 150px;
+    margin: auto;
+}
+
+#Number{
+    width: auto;
+    margin: auto;
+    font-size: 5em; 
+    font-family: serif; 
+    color: red; 
+    text-align: center; 
+}
+
+.blink { 
+    
+    animation: animate  
+        1.5s linear infinite; 
+} 
+
+@keyframes animate { 
+    0% { 
+        opacity: 0; 
+    } 
+
+    50% { 
+        opacity: 0.7; 
+    } 
+
+    100% { 
+        opacity: 0; 
+    } 
+} 
