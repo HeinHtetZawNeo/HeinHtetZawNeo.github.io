@@ -59,7 +59,7 @@ let group4 = {
         this.students.forEach((std) => {
             return function (student) {
                 console.log(this.title + ": " + student);
-            }.call(this,[std]);
+            }.apply(this,[std]);
     });
     }
 };
