@@ -4,24 +4,27 @@ function LinkedList(val) {
 }
 
 LinkedList.prototype.add = function (arg) {
-    if(this.next==null)
+    if (this.next == null)
         this.next = new LinkedList(arg);
     else
         this.next.add(arg);
 }
 
-LinkedList.prototype.print = function(){
+LinkedList.prototype.print = function () {
     console.log(this.value);
-    if(this.next)
+    if (this.next)
         this.next.print();
 }
 
-LinkedList.prototype.remove = function(arg,prev){
-    if(this.value===arg){
-        prev.next = this.next;
-    }else{
-        if(this.next)
-            this.next.remove(arg,this);
+LinkedList.prototype.remove = function (arg, prev) {
+    if (this.value === arg) {
+        if (prev)
+            prev.next = this.next;
+        else
+            this.value = undefined;
+    } else {
+        if (this.next)
+            this.next.remove(arg, this);
     }
 }
 linkedlist = new LinkedList();
