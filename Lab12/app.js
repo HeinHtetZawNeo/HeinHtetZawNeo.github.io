@@ -17,10 +17,6 @@ app.use(express.urlencoded());
 app.use('/user', userRouter);
 app.use(productRouter);
 
-app.use('/',(req, res, next) => {
-    fs.createReadStream(path.join(__dirname, 'view', 'mainMenu.html')).pipe(res);
-});
-
 //for status 400
 app.use((req, res, next) => {
     fs.createReadStream(path.join(__dirname, 'view', 'error','error.html')).pipe(res);

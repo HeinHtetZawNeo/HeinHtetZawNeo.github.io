@@ -9,17 +9,8 @@ const options = {
 };
 const router = express.Router(options);
 
-router.get('/add', (req, res, next) => {
-    fs.createReadStream(path.join(__dirname, '..', 'view','user', 'add.html')).pipe(res);
-});
-
-router.post('/add', (req, res, next) => {
-    userController.addUser(req);
-    fs.createReadStream(path.join(__dirname, '..', 'view','user', 'saved.html')).pipe(res);
-});
-router.get('/', (req, res, next) => {
-    
-    res.send(userController.listUser());
-});
+router.get('/add', userController.getAddPage);
+router.post('/add', userController.addUser);
+router.get('/', userController.listUser);
 
 module.exports = router;
