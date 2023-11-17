@@ -1,0 +1,12 @@
+GET http://localhost:3000/books/
+
+###
+POST http://localhost:3000/books/add
+Content-Type: "application/json"
+
+{
+    "title" :"Book 1",
+    "ISBN" :"ISBN123",
+    "publishedDate":"10JAN2000",
+    "author":"Hein"
+}

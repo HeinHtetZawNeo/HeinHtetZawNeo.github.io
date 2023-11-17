@@ -17,7 +17,7 @@ app.use(express.urlencoded());
 app.use('/user', userRouter);
 app.use(productRouter);
 
-//for status 400
+//for status 404
 app.use((req, res, next) => {
     fs.createReadStream(path.join(__dirname, 'view', 'error','error.html')).pipe(res);
 });
