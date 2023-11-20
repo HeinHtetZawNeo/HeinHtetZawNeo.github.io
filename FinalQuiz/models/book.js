@@ -40,6 +40,6 @@ module.exports = class Book {
     }
 
     static getBookByAuthorFirstName(fname){
-        return bookList.filter(book=>book.author.firstname.includes(fname));
+        return bookList.filter(book=>book.author.firstname.toLowerCase().includes(fname.toLowerCase()));
     }
 }
