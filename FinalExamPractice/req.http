@@ -1,0 +1,30 @@
+POST http://localhost:3000/students/610006/courses
+Content-Type: application/json
+
+{
+    "courseId": "CS479",
+    "coursename": "Server Side Programming 3",
+    "semester": "2021-Fall",
+    "grade": 90
+}
+
+###
+POST http://localhost:3000/students/610001/courses
+Content-Type: application/json
+
+{
+    "courseId": "CS479",
+    "coursename": "Server Side Programming 3",
+    "semester": "2021-Fall",
+    "grade": 99
+}
+
+###
+GET http://localhost:3000/students/610001/getAverage
+
+###
+GET http://localhost:3000/students/610001/getAverage?semester=GG
+
+
+###
+GET http://localhost:3000/students/610001/getAverage?semester=2021-Spring
